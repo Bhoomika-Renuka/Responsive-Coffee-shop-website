@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cafe Coffee</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">Cafe<span>Coffee</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Cafe Coffee</h2>
+        
+        <img src="c:\Users\HP\Desktop\Coffee-project\img\bg-image.jpeg" alt="">
+    
+        <p>Would you like to start the day with a nice coffee?</p>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <h3>Menu</h3>
+            <h4>Cafe Coffee Menu</h4>
+        </div>
+        <div class="menu-content">
+            <div class="hot-coffees">
+                <div class="hot-coffees-image">
+                    <img src="C:\Users\HP\Desktop\Coffee\Hot-Coffee.png" alt="">
+                </div>
+                <div class="hot-coffees-body">
+                    <h2>Hot Coffees</h2>
+                    <label>The rich coffee smell permeates the air, the warmth of the coffee cup heats our hands, and then the nectar of the gods hits our taste buds.!</label>
+                </div>
+            </div>
+            <div class="cold-coffees">
+                <div class="cold-coffees-image">
+                    <img src="C:\Users\HP\Desktop\Coffee\Cold-Coffee.png" alt="">
+                </div>
+                <div class="cold-coffees-body">
+                    <h2>Cold Coffees</h2>
+                    <label>Cold Coffee is a creamy and popular cold beverage in a few ice cubes while blending for a frothy finish. This creamy, frothy drink is just the perfect indulgence on a hot summer day.</label>
+                </div>
+            </div>
+            <div class="frappucino-coffees">
+                <div class="frappucino-coffees-image">
+                    <img src="C:\Users\HP\Desktop\Coffee\Frappuccino.jpg" alt="">
+                </div>
+                <div class="frappucino-coffees-body">
+                    <h2>Frappucino Coffees</h2>
+                    <label>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, repellat!</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="shop" id="shop">
+        <div class="shop-header">
+            <h3>Shop</h3>
+            <h4>Cafe Coffee Drinks</h4>
+        </div>
+        <div class="shop-box">
+            <div class="item-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\caramel-macchiato.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">100.0Rs</label>
+                        <h3>Caramel Macchiato</h3>
+                        <label>Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.</label>
+						<button class="order-btn" data-name="Caramel Macchiato" data-price="100.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\flat-white.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">150.0Rs</label>
+                        <h3>Flat White</h3>
+                        <label>Smooth ristretto shots of espresso get the perfect amount of steamed whole milk to create a not-too-strong, not-too-creamy, just-right flavor</label>
+						<button class="order-btn" data-name="Flat White" data-price="150.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\chocolate-frappuccino.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">200.0Rs</label>
+                        <h3>Chocolate Frappucino</h3>
+                        <label>It's a frozen chocolate frappe (which is just ice blended with milk to make a slush) full of chocolate syrup and mini chocolate chips.</label>
+						<button class="order-btn" data-name="Chocolate Frappucino" data-price="200.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\frappe.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">250.0Rs</label>
+                        <h3>Frappe</h3>
+                        <label>The slushy-like drinks often contain some kind of milk and a flavored syrup, plus a top layer of whipped cream.</label>
+						<button class="order-btn" data-name="Frappe" data-price="250.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\caffe-mocha.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">300.0Rs</label>
+                        <h3>Caffe Mocha</h3>
+                        <label>A mocha or mocha latte is a drink made with espresso and steamed milk that’s flavored with chocolate syrup.</label>
+						<button class="order-btn" data-name="Caffe Mocha" data-price="300.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\vanilla.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">350.0Rs</label>
+                        <h3>Vanilla Frappucino</h3>
+                        <label>This rich and creamy blend of vanilla bean, milk and ice topped with whipped cream takes va-va-vanilla flavor , try it affogato-style with a hot espresso shot poured right over the top.</label>
+						<button class="order-btn" data-name="Vanilla Frappucino" data-price="350.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\white-choco.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">400.0Rs</label>
+                        <h3>White Chocolate Mocha</h3>
+                        <label>Our signature espresso meets white chocolate sauce and steamed milk, and then is finished off with sweetened whipped cream to create this supreme white chocolate delight.</label>
+						<button class="order-btn" data-name="White Chocolate Mocha" data-price="400.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;" onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="C:\Users\HP\Desktop\Coffee\ice-latte.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">450.0Rs</label>
+                        <h3>Ice Latte</h3>
+                        <label>An iced latte is a drink with espresso, milk and optional sweetener.</label>
+						<button class="order-btn" data-name="Ice Latte" data-price="450.0" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;"onclick="orderItem(this)">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-box">
+            <div class="contact-image">
+                <img src="C:\Users\HP\Desktop\Coffee\contact_us.jpg">
+            </div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-body">
+                <form>
+                    <h2>Contact Us</h2>
+                    <div class="form-content">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" required>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <label>Copyright &copy; </label>
+            </div>
+            <div class="brand">
+                <label>cafe <span>Coffee</span></label>
+            </div>
+        </div>
+    </div>
+    <!-- Include the script.js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
